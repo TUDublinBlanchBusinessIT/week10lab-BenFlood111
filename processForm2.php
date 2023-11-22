@@ -3,8 +3,8 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
-    $subTenKG = isset($_POST['subTenKG']);    
-    $overTenKG = isset($_POST['overTenKG']);
+    $subTenKG = $_POST['subTenKG'];    
+    $overTenKG = $_POST['overTenKG'];
 
     
     $_SESSION['subTenKG'] = $subTenKG;
